@@ -1,6 +1,6 @@
 # GTFO2Root
 
-**GTFO2Root** is a post-exploitation automation tool designed to identify and exploit known Linux binaries for privilege escalation. Unlike tools that only list potential paths, this script **automatically attempts to spawn a root shell** when exploitable conditions are met — no manual copy-pasting needed.
+**GTFO2Root** is a post-exploitation automation tool based on [GTFOBins](https://gtfobins.github.io/), designed to identify and exploit known Linux binaries for privilege escalation. Unlike tools that only list potential paths, this script **automatically attempts to spawn a root shell** when exploitable binaries are found.
 
 ## Features
 
@@ -16,7 +16,7 @@
 
 ## Usage
 
-```bash
+```text
 $ python3 gtfo2root.py -h
 usage: gtfo2root.py [-h] [-l]
 
@@ -31,7 +31,7 @@ options:
 
 ### Examples
 
-```bash
+```console
 user@box:~$ python3 gtfo2root.py
 [*] Searching for SUID binaries...
 [*] Searching for binaries with capabilities...
@@ -42,15 +42,15 @@ root@box:~#
 
 ## Disclaimer
 
-This tool is intended for **educational and authorized penetration testing purposes only**. Unauthorized use on systems you do not own or have explicit permission to test is illegal and unethical.
+This tool is intended for educational and authorized penetration testing purposes only. Unauthorized use on systems you do not own or have explicit permission to test is illegal and unethical.
 
 ## Feedback & Contributions
 
 I'm planning new features like `sudo` support.
 
-**I welcome all feedback, ideas, and contributions!**  
+I welcome all feedback, ideas, and contributions!
 Feel free to open an issue or submit a pull request on GitHub.
 
-## 📄 License
+## License
 
 MIT License
